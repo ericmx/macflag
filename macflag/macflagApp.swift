@@ -8,10 +8,21 @@
 import SwiftUI
 
 @main
-struct macflagApp: App {
+struct MacFlag: App {
+        
+    var flagTest = Flag().flags
+    @State var currentFlag = "🏴‍☠️"
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra(currentFlag) {
+            ForEach(flagTest.indices) { flag in
+                Button(action: {
+                    currentFlag = flagTest[flag]
+                })
+                {
+                    Text("\(flagTest[flag])")
+                }
+            }
         }
     }
 }
