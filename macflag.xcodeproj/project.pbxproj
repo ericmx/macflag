@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C13126202868D4930079E516 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C131261F2868D4930079E516 /* Flag.swift */; };
 		C1E03100285CDBC8000DD757 /* macflagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E030FF285CDBC8000DD757 /* macflagApp.swift */; };
-		C1E03102285CDBC8000DD757 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03101285CDBC8000DD757 /* ContentView.swift */; };
 		C1E03104285CDBC8000DD757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E03103285CDBC8000DD757 /* Assets.xcassets */; };
 		C1E03107285CDBC8000DD757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E03106285CDBC8000DD757 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		C131261F2868D4930079E516 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
 		C1E030FC285CDBC8000DD757 /* macflag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macflag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E030FF285CDBC8000DD757 /* macflagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macflagApp.swift; sourceTree = "<group>"; };
-		C1E03101285CDBC8000DD757 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1E03103285CDBC8000DD757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E03106285CDBC8000DD757 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1E03108285CDBC8000DD757 /* macflag.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macflag.entitlements; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				C1E030FF285CDBC8000DD757 /* macflagApp.swift */,
-				C1E03101285CDBC8000DD757 /* ContentView.swift */,
 				C1E03103285CDBC8000DD757 /* Assets.xcassets */,
 				C1E03108285CDBC8000DD757 /* macflag.entitlements */,
 				C1E03105285CDBC8000DD757 /* Preview Content */,
@@ -142,7 +139,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1E03102285CDBC8000DD757 /* ContentView.swift in Sources */,
 				C13126202868D4930079E516 /* Flag.swift in Sources */,
 				C1E03100285CDBC8000DD757 /* macflagApp.swift in Sources */,
 			);

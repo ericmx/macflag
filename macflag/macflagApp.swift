@@ -10,17 +10,16 @@ import SwiftUI
 @main
 struct MacFlag: App {
         
-    var flagTest = Flag().flags
+    var menuBarFlag = Flag().flags
     @State var currentFlag = "🏴‍☠️"
-
+    
     var body: some Scene {
         MenuBarExtra(currentFlag) {
-            ForEach(flagTest.indices) { flag in
+            ForEach(Array(menuBarFlag.indices), id: \.self) { index in
                 Button(action: {
-                    currentFlag = flagTest[flag]
-                })
-                {
-                    Text("\(flagTest[flag])")
+                    currentFlag = menuBarFlag[index]
+                }) {
+                    Text("\(menuBarFlag[index])")
                 }
             }
         }
