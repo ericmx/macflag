@@ -15,7 +15,7 @@ struct MacFlag: App {
     
     var body: some Scene {
         MenuBarExtra(currentFlag) {
-            ForEach(Array(menuBarFlag.indices), id: \.self) { index in
+            ForEach(menuBarFlag.indices, id: \.self) { index in
                 Button(action: {
                     currentFlag = menuBarFlag[index]
                 }) {

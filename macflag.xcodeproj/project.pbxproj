@@ -52,11 +52,11 @@
 		C1E030FE285CDBC8000DD757 /* macflag */ = {
 			isa = PBXGroup;
 			children = (
+				C131261F2868D4930079E516 /* Flag.swift */,
 				C1E030FF285CDBC8000DD757 /* macflagApp.swift */,
 				C1E03103285CDBC8000DD757 /* Assets.xcassets */,
 				C1E03108285CDBC8000DD757 /* macflag.entitlements */,
 				C1E03105285CDBC8000DD757 /* Preview Content */,
-				C131261F2868D4930079E516 /* Flag.swift */,
 			);
 			path = macflag;
 			sourceTree = "<group>";
