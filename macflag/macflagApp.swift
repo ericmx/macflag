@@ -12,9 +12,15 @@ struct MacFlag: App {
         
     var menuBarFlag = Flag().flags
     @State var currentFlag = "🏴‍☠️"
+    @State var isDockdisabled = false
     
     var body: some Scene {
         MenuBarExtra(currentFlag) {
+            Button(action: {
+                toggleDockIconEnabled(isDockdisabled)
+            }) {
+                Text("Toggle dock icon")
+            }
             ForEach(menuBarFlag.indices, id: \.self) { index in
                 Button(action: {
                     currentFlag = menuBarFlag[index]
@@ -24,4 +30,9 @@ struct MacFlag: App {
             }
         }
     }
+    
+    func toggleDockIconEnabled(_ isEnabled: Bool) {
+        NSApp.setActivationPolicy(isEnabled ? .regular : .accessory)
+    }
+
 }
