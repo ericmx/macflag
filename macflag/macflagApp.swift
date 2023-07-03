@@ -19,7 +19,7 @@ struct MacFlag: App {
                 Button(action: {
                     currentFlag = menuBarFlag[index]
                 }) {
-                    Text("\(menuBarFlag[index])")
+                    Text("\(menuBarFlag[index])").font(.title)
                 }
             }
         }
