@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct MacFlag: App {
-    @AppStorage("selectedFlag") private var currentFlag = "🏴‍☠️"
+    @AppStorage("selectedFlag") private var currentFlag = "flag_pirate"
     @State private var searchText = ""
 
     private var filteredFlags: [CountryFlag] {
@@ -29,7 +29,8 @@ struct MacFlag: App {
                 filteredFlags: filteredFlags
             )
         } label: {
-            Text(currentFlag)
+            Image(currentFlag)
+                .renderingMode(.original)
         }
         .menuBarExtraStyle(.window)
     }
@@ -52,15 +53,18 @@ struct FlagMenuContent: View {
                 LazyVStack(spacing: 0) {
                     ForEach(filteredFlags) { flag in
                         Button(action: {
-                            currentFlag = flag.emoji
+                            currentFlag = flag.assetName
                         }) {
                             HStack {
-                                Text(flag.emoji)
-                                    .font(.title2)
+                                Image(flag.assetName)
+                                    .interpolation(.none)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 32, height: 22)
                                 Text(flag.name)
                                     .lineLimit(1)
                                 Spacer()
-                                if currentFlag == flag.emoji {
+                                if currentFlag == flag.assetName {
                                     Image(systemName: "checkmark")
                                         .foregroundColor(.accentColor)
                                 }
